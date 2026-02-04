@@ -12,11 +12,13 @@ import (
 )
 
 const (
-	headerAuthorization     = "Authorization"
-	headerContentType       = "Content-Type"
+	headerAuthorization = "Authorization"
+	headerContentType   = "Content-Type"
+	headerUserAgent     = "User-Agent"
+
+	// #nosec G101 -- These are HTTP header names, not credentials
 	headerPublicAPIKey      = "X-IntaSend-Public-API-Key"
 	headerIntaSendPublicKey = "INTASEND_PUBLIC_API_KEY"
-	headerUserAgent         = "User-Agent"
 
 	contentTypeJSON = "application/json"
 )
@@ -98,7 +100,7 @@ func (c *Client) doRequest(ctx context.Context, cfg *requestConfig) error {
 		}
 
 		respBody, err := io.ReadAll(resp.Body)
-		resp.Body.Close()
+		_ = resp.Body.Close() // #nosec G104 -- error on close is not critical
 		if err != nil {
 			lastErr = &NetworkError{Err: err, Message: "failed to read response"}
 			if c.debug {
