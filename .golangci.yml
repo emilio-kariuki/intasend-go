@@ -1,8 +1,6 @@
 run:
   timeout: 5m
   tests: true
-  skip-dirs:
-    - vendor
 
 linters:
   enable:
@@ -13,10 +11,8 @@ linters:
     - staticcheck
     - typecheck
     - unused
-    - gofmt
     - goimports
     - misspell
-    - revive
     - unconvert
 
 linters-settings:
@@ -29,6 +25,8 @@ linters-settings:
       - (io.Writer).Write
 
 issues:
+  exclude-dirs:
+    - vendor
   exclude-rules:
     # Exclude errcheck for test files
     - path: _test\.go

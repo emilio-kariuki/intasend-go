@@ -85,18 +85,18 @@ type InitiateResponse struct {
 
 // TransactionResult represents the result of a single transaction.
 type TransactionResult struct {
-	Status           string    `json:"status"`
-	RequestRefID     string    `json:"request_ref_id"`
-	Name             string    `json:"name"`
-	Account          string    `json:"account"`
+	Status           string      `json:"status"`
+	RequestRefID     string      `json:"request_ref_id"`
+	Name             string      `json:"name"`
+	Account          string      `json:"account"`
 	Amount           interface{} `json:"amount"`
-	Narrative        string    `json:"narrative"`
-	BankCode         string    `json:"bank_code,omitempty"`
-	AccountType      string    `json:"account_type,omitempty"`
-	AccountReference string    `json:"account_reference,omitempty"`
-	FailedReason     string    `json:"failed_reason,omitempty"`
-	CreatedAt        time.Time `json:"created_at"`
-	UpdatedAt        time.Time `json:"updated_at"`
+	Narrative        string      `json:"narrative"`
+	BankCode         string      `json:"bank_code,omitempty"`
+	AccountType      string      `json:"account_type,omitempty"`
+	AccountReference string      `json:"account_reference,omitempty"`
+	FailedReason     string      `json:"failed_reason,omitempty"`
+	CreatedAt        time.Time   `json:"created_at"`
+	UpdatedAt        time.Time   `json:"updated_at"`
 }
 
 // MPesaRequest is a simplified request for M-Pesa B2C payouts.

@@ -91,40 +91,40 @@ type fundMPesaRequestBody struct {
 
 type fundCheckoutRequestBody struct {
 	PublicKey    string  `json:"public_key"`
-	WalletID    string  `json:"wallet_id"`
-	Amount      float64 `json:"amount"`
-	Currency    string  `json:"currency"`
-	Email       string  `json:"email"`
-	FirstName   string  `json:"first_name"`
-	LastName    string  `json:"last_name"`
-	PhoneNumber string  `json:"phone_number"`
-	Country     string  `json:"country"`
-	Host        string  `json:"host"`
-	RedirectURL string  `json:"redirect_url"`
-	APIRef      string  `json:"api_ref"`
-	CardTariff  string  `json:"card_tarrif"`
-	MobileTariff string `json:"mobile_tarrif"`
+	WalletID     string  `json:"wallet_id"`
+	Amount       float64 `json:"amount"`
+	Currency     string  `json:"currency"`
+	Email        string  `json:"email"`
+	FirstName    string  `json:"first_name"`
+	LastName     string  `json:"last_name"`
+	PhoneNumber  string  `json:"phone_number"`
+	Country      string  `json:"country"`
+	Host         string  `json:"host"`
+	RedirectURL  string  `json:"redirect_url"`
+	APIRef       string  `json:"api_ref"`
+	CardTariff   string  `json:"card_tarrif"`
+	MobileTariff string  `json:"mobile_tarrif"`
 }
 
 type createCheckoutRequestBody struct {
 	PublicKey    string  `json:"public_key"`
-	Amount      float64 `json:"amount"`
-	Currency    string  `json:"currency"`
-	Email       string  `json:"email"`
-	FirstName   string  `json:"first_name"`
-	LastName    string  `json:"last_name"`
-	PhoneNumber string  `json:"phone_number"`
-	Country     string  `json:"country"`
-	Address     string  `json:"address"`
-	City        string  `json:"city"`
-	State       string  `json:"state"`
-	Zipcode     string  `json:"zipcode"`
-	Host        string  `json:"host"`
-	RedirectURL string  `json:"redirect_url"`
-	APIRef      string  `json:"api_ref"`
-	Comment     string  `json:"comment"`
-	Method      string  `json:"method"`
-	CardTariff  string  `json:"card_tarrif"`
-	MobileTariff string `json:"mobile_tarrif"`
-	WalletID    string  `json:"wallet_id"`
+	Amount       float64 `json:"amount"`
+	Currency     string  `json:"currency"`
+	Email        string  `json:"email"`
+	FirstName    string  `json:"first_name"`
+	LastName     string  `json:"last_name"`
+	PhoneNumber  string  `json:"phone_number"`
+	Country      string  `json:"country"`
+	Address      string  `json:"address"`
+	City         string  `json:"city"`
+	State        string  `json:"state"`
+	Zipcode      string  `json:"zipcode"`
+	Host         string  `json:"host"`
+	RedirectURL  string  `json:"redirect_url"`
+	APIRef       string  `json:"api_ref"`
+	Comment      string  `json:"comment"`
+	Method       string  `json:"method"`
+	CardTariff   string  `json:"card_tarrif"`
+	MobileTariff string  `json:"mobile_tarrif"`
+	WalletID     string  `json:"wallet_id"`
 }
