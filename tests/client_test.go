@@ -3,7 +3,7 @@ package tests
 import (
 	"testing"
 
-	intasend "github.com/intasend/intasend-go"
+	intasend "github.com/emilio-kariuki/intasend-go"
 )
 
 func TestNew_WithTestPublishableKey(t *testing.T) {

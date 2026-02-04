@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	intasend "github.com/intasend/intasend-go"
+	intasend "github.com/emilio-kariuki/intasend-go"
 )
 
 func TestCollection_Charge(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	intasend "github.com/intasend/intasend-go"
+	intasend "github.com/emilio-kariuki/intasend-go"
 )
 
 // newTestClient creates a Client pointed at the given httptest.Server.

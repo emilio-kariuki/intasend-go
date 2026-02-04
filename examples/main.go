@@ -17,7 +17,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/intasend/intasend-go"
+	"github.com/emilio-kariuki/intasend-go"
 )
 
 func main() {

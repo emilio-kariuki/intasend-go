@@ -7,7 +7,7 @@ IntaSend is an African payment gateway (Kenya-focused) that enables businesses t
 ## Installation
 
 ```bash
-go get github.com/intasend/intasend-go
+go get github.com/emilio-kariuki/intasend-go
 ```
 
 ## Quick Start
@@ -19,7 +19,7 @@ import (
     "context"
     "log"
 
-    "github.com/intasend/intasend-go"
+    "github.com/emilio-kariuki/intasend-go"
 )
 
 func main() {
@@ -317,4 +317,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - [IntaSend Documentation](https://developers.intasend.com/docs)
 - [IntaSend Support](https://intasend.com/contact)
-- [GitHub Issues](https://github.com/intasend/intasend-go/issues)
+- [GitHub Issues](https://github.com/emilio-kariuki/intasend-go/issues)

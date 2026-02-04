@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	intasend "github.com/intasend/intasend-go"
+	intasend "github.com/emilio-kariuki/intasend-go"
 )
 
 func TestAPIError_ErrorMessage(t *testing.T) {

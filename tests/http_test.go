@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	intasend "github.com/intasend/intasend-go"
+	intasend "github.com/emilio-kariuki/intasend-go"
 )
 
 func TestHTTP_AuthenticatedGetHeaders(t *testing.T) {
