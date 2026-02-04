@@ -89,7 +89,7 @@ type TransactionResult struct {
 	RequestRefID     string    `json:"request_ref_id"`
 	Name             string    `json:"name"`
 	Account          string    `json:"account"`
-	Amount           string    `json:"amount"`
+	Amount           interface{} `json:"amount"`
 	Narrative        string    `json:"narrative"`
 	BankCode         string    `json:"bank_code,omitempty"`
 	AccountType      string    `json:"account_type,omitempty"`
