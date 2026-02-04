@@ -1,0 +1,43 @@
+run:
+  timeout: 5m
+  tests: true
+  skip-dirs:
+    - vendor
+
+linters:
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - typecheck
+    - unused
+    - gofmt
+    - goimports
+    - misspell
+    - revive
+    - unconvert
+
+linters-settings:
+  errcheck:
+    check-blank: false
+    check-type-assertions: false
+    exclude-functions:
+      - (*encoding/json.Encoder).Encode
+      - (*encoding/json.Decoder).Decode
+      - (io.Writer).Write
+
+issues:
+  exclude-rules:
+    # Exclude errcheck for test files
+    - path: _test\.go
+      linters:
+        - errcheck
+    # Exclude some linters from running on tests files
+    - path: tests/
+      linters:
+        - errcheck
+        - gosec
+  max-issues-per-linter: 0
+  max-same-issues: 0
